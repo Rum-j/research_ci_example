@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint":true 
+    },
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
+}
