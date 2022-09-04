@@ -1,6 +1,6 @@
 name: Lint Code Base
 
-on: push
+on: push #push 할때마다 동작하기
 
 jobs:
   # Set the job key. The key is displayed as the job name
@@ -22,9 +22,9 @@ jobs:
 
       # Runs the Super-Linter action
       - name: Lint Code Base
-        uses: github/super-linter@v4
+        uses: github/super-linter@v4 #linter verion check 필요 
         env:
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_PYTHON_BLACK: true
           VALIDATE_PYTHON_FLAKE8: true
